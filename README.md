@@ -1,5 +1,3 @@
-# Retailer_price_stock_tracker_and_notifier
-
 # EMAG retailer price and stock tracker
 ## Built in Python with PySimpleGui, sqlite3 and beautifulsoup.
 
