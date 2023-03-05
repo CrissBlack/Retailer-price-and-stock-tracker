@@ -214,6 +214,7 @@ def add_product_window():
 
 
 # WINDOW - ADD PRICE ALERT #################################################################################
+
 def add_price_alert_window(selected_row):
     sg.theme('DarkAmber')
     product_name = selected_row[1]

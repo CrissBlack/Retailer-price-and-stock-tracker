@@ -1,7 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import webbrowser
-import time
 
 HEADERS = {
         'User-Agent': ('Mozilla/5.0 (X11; Linux x86_64)'
@@ -36,13 +34,7 @@ class Product:
         return price_float
 
     def get_name(self):
-        while True:
-            try:
-                name = self.soup.select_one('h1[class="page-title"]').text.strip()
-            except AttributeError:
-                webbrowser.open_new_tab(self.url)
-                time.sleep(5)
-                continue
-            else:
-                return name
+        name = self.soup.select_one('h1[class="page-title"]').text.strip()
+        return name
+
 
